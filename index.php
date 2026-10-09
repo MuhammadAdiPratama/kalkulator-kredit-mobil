@@ -168,7 +168,7 @@ if (isset($_POST['hitung'])) {
               <div class="alert alert-danger"><?php echo $pesan_error; ?></div>
             <?php } ?>
 
-            <form method="post" action="#kalkulator">
+            <form method="post" action="index.php#kalkulator">
               <div class="mb-3">
                 <label for="nama" class="form-label">Nama</label>
                 <input type="text" class="form-control" id="nama" name="nama" value="<?php echo $nama; ?>">
@@ -206,7 +206,7 @@ if (isset($_POST['hitung'])) {
               </div>
 
               <button type="submit" name="hitung" class="btn btn-primary">Hitung</button>
-              <a href="index.php#kalkulator" class="btn btn-outline-secondary">Reset</a>
+<a href="index.php?reset=<?php echo time(); ?>#kalkulator" class="btn btn-outline-secondary">Reset</a>
             </form>
           </div>
         </div>
